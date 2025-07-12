@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icon.png" type="x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Installing Python</title>
+    </head>
+    <body>
+        <header>
+            <h1>Installing Python</h1>
+        </header>
+        <div class="container">
+            <div class="section active" id="Python installation"> <!--main-->
+                <h2>Python installation</h2>
+                <div >
+                    <p>
+                        Python is a powerful, easy-to-learn programming language that can be installed 
+                        on various operating systems, including Windows, macOS, Linux, and even Android devices.
+                        The installation process is simple and beginner-friendly.
+                    </p>
+                    <p>
+                        Python needs to be installed separately on most devices because it is not included by default in many operating systems. 
+                        Unlike built-in system languages or tools, Python is an independent programming language that requires its own interpreter 
+                        to translate human-readable code into instructions a computer can execute. Operating systems like Windows and macOS do not 
+                        come with Python pre-installed because it is not essential for their core functionality. Even though some versions of Linux 
+                        include Python by default, the pre-installed versions are often used for system tasks and may not be suitable for general 
+                        programming or development purposes. Installing Python separately ensures that users have the latest version, full control 
+                        over the programming environment, and access to essential tools like pip for managing packages. This separation allows Python 
+                        to remain flexible, updatable, and independent of the operating system’s internal processes, making it a powerful and 
+                        widely-used tool for software development, data analysis, web development, and automation.
+                    </p>
+                </div>
+                <div class="grid">
+                    <div class="box" onclick="showSection('windows')">🪟Installation for Windows</div>
+                    <div class="box" onclick="showSection('mac')">🍎Installation for MacOs</div>
+                    <div class="box" onclick="showSection('linux')">🐧Installation for Linux</div>
+                    <div class="box" onclick="showSection('android')">🤖Installation for Android</div>
+                </div> <br><br><br><br>
+                <center><a href="index.html"><button>Home</button></a></center>
+            </div>
+            <div class="section" id="windows"><!--windows-->
+                <h2>🪟 How to Install Python on Windows?</h2>
+                <br>
+                <div>
+                    <ol class="ol">
+                        <li>Download the Python Installer
+                            <ul type = "disc">
+                                <li>Visit the official Python website: <a href="https://www.python.org/downloads/">python.org/downloads</a></li>
+                                <li>Click on the “Download Python” button.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Run the Installer
+                            <ul type = "disc">
+                                <li>Locate the downloaded .exe file (e.g., python-3.x.x-amd64.exe) and double-click to run it</li>
+                                <li><strong>Important:</strong> Check the box labeled “Add Python to PATH” before clicking “Install Now”.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Complete the Installation
+                            <ul type ="disc">
+                                <li>The installer will set up Python and display a success message upon completion.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Verify the Installation
+                            <ul type = "disc">
+                                <li>Open Command Prompt and type: <br>
+                                    <code>
+                                        python --version
+                                    </code>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <h3>You should see the installed Python version displayed.</h3>
+                <center><button onclick="showSection('Python installation')">Back</button>
+                    <a href="index.html"><button>Home</button></a>
+                </center>
+            </div>
+            <div class="section" style="max-width: 1200px;" id="mac"><!--mac-->
+                <h2>🍎 How to Install Python on macOS?</h2>
+                <br>
+                <div>
+                    <div><strong>Method 1: Using the Official Installer</strong>
+                        <ol type="1">
+                            <li>Go to <a href="https://www.python.org/downloads/">python.org/downloads</a></li>
+                            <li>Click on the “Download Python” button for macOS.</li>
+                            <li>Open the downloaded .pkg file and follow the installation prompts.</li>
+                        </ol>
+                    </div>
+                    <div><strong>Method 2: Using Homebrew (Recommended)</strong>
+                        <ol type="1">
+                            <li>Open Terminal.</li>
+                            <li>Install Homebrew if you haven't already: <br>
+                                <code>
+                                    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+                                </code>
+                            </li>
+                            <li>Install Python: <br>
+                                <code>
+                                    brew install python
+                                </code>
+                            </li>
+                            <li>Verify the installation: <br>
+                                <code>
+                                    python3 --version
+                                </code>
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+                <center><button onclick="showSection('Python installation')">Back</button>
+                    <a href="index.html"><button>Home</button></a>
+                </center>
+            </div>
+            <div class="section" id="linux"><!--linux-->
+                <h2>🐧 How to Install Python on Linux?</h2>
+                <br>
+                <ol type="1">
+                    <li>
+                        Open the Terminal <br>
+                        <ul><li>You can press <code>Ctrl + Alt + T</code> or find Terminal in your applications.</li></ul>
+                    </li>
+                    <li>
+                        Check if Python is Already Installed <br>
+                        <ul>
+                            <li>Type the following command and press Enter: <br> <code>python3 --version</code></li>
+                            <li>If Python is installed, it will show a version number</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Update the Package List  <br>
+                        <ul>
+                            <li>To get the latest packages, type:  <br> <code>sudo apt update</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Install Python <br>
+                        <ul>
+                            <li>Install Python 3 by running: <br> <code>sudo apt install python3</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                         Install pip (Python Package Manager) <br>
+                         <ul>
+                            <li>To install pip, type: <br> <code>sudo apt install python3-pip</code></li>
+                         </ul>
+                    </li>
+                    <li>
+                        Verify Installation 
+                        <ul>
+                            <li>Check Python version: <br> <code>python3 --version</code></li>
+                            <li>Check pip version: <br> <code>pip3 --version</code></li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>👉 Note for Other Linux Distros:</h3>
+                <ul>
+                    <li>Fedora, CentOS: <br><code>sudo dnf install python3</code></li>
+                    <li>Arch Linux: <br><code>sudo pacman -S python</code></li>
+                </ul>
+                <center><button onclick="showSection('Python installation')">Back</button>
+                    <a href="index.html"><button>Home</button></a>
+                </center>
+            </div>
+            <div class="section" id="android"><!--android-->
+                <h2>🤖 How to Install Python on Android</h2>
+                <br>
+                <ol>
+                    <li>
+                        Open the Google Play Store  <br>
+                        <ul><li>On your Android phone, tap on the Play Store app.</li></ul>
+                    </li>
+                    <li>
+                        Search for a Python App <br>
+                        <ul><li>In the search bar, type Pydroid 3 (recommended) or QPython.</li></ul>
+                    </li>
+                    <li>
+                         Install the Python App <br>
+                         <ul><li>Tap Install on Pydroid 3 – IDE for Python 3.</li></ul>
+                    </li>
+                    <li>
+                        Open the App <br>
+                        <ul><li>Once installed, open Pydroid 3 from your app list.</li></ul>
+                    </li>
+                    <li>
+                        Write Your First Python Code <br>
+                        <ul><li>In the app’s code editor, type: <br><code>print("Hello, Python on Android!")</code></li></ul>
+                    </li>
+                    <li>
+                        Run Your Code <br>
+                        <ul><li>Press the Run ▶️ button to execute your Python code and view the result.</li></ul>
+                    </li>
+                    <li>
+                        Install Extra Python Libraries (Optional) <br>
+                        <ul><li>Use the app’s built-in Pip option to install additional Python packages like 
+                            <code>numpy</code>, <code>pandas</code>, or <code>matplotlib</code>.</li></ul>
+                    </li>
+                </ol>
+                <h3>📌 Why You Don’t Need to Install Python Separately on Android:</h3>
+                <p>On Windows, Mac, and Linux, Python needs to be installed system-wide because those operating systems 
+                    don’t come with a built-in Python environment.
+                </p>
+                <p>However, on Android, apps like Pydroid 3 and QPython already come with a pre-installed and 
+                    self-contained Python interpreter inside the app itself. This means the app includes everything needed
+                     to write and run Python code, so there’s no need to manually install Python separately as you would on a computer
+                     . You just install the app and start coding instantly.
+                </p>
+                <h4>✅ Conclusion:</h4>
+                <p>With Pydroid 3 or similar apps, you can practice, write, and run Python 
+                    anywhere on your Android device—no computer required!
+                </p>
+                <center><button onclick="showSection('Python installation')">Back</button>
+                    <a href="index.html"><button>Home</button></a>
+                </center>
+            </div>
+        </div>
+    </body>
+    <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</html>
